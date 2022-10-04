@@ -1,0 +1,604 @@
+/* start global  */
+:root {
+    --main-black: #343434;
+    --secondary-black: #1c1c1c;
+    --main-p: #748182;
+    --main-back: #f7f7f7;
+    --secondary-back: #f4f4f4;
+}
+
+P {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-head h2 {
+    color: var(--main-black);
+    font-size: bolder;
+    font-size: 35px;
+}
+
+/* end global  */
+/* start home */
+.navbar-nav>li>a {
+    color: black !important;
+    font-size: 18px;
+    position: relative;
+}
+
+.navbar-nav>li>a::after {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    width: 0px;
+    height: 2px;
+    background-color: #000;
+    content: "";
+    margin: auto;
+    transition:1s all ;
+    -webkit-transition:1s all ;
+    -moz-transition:1s all ;
+    -ms-transition:1s all ;
+    -o-transition:1s all ;
+}
+
+.navbar-nav>li>a:hover::after {
+    width: 40px;
+}
+@media screen and (max-width:992px) {
+    .navbar-nav>li>a::after {
+        left: 0px;
+    }
+}
+.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg.jpg);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.home .content span {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 20px;
+}
+
+.home .content h2 {
+    position: relative;
+}
+
+.home .content h2::after {
+    content: " ";
+    animation: 15s type infinite alternate;
+    -webkit-animation: 15s type infinite alternate;
+}
+
+@keyframes type {
+    0% {
+        content: " ";
+    }
+
+    3% {
+        content: " La|";
+
+    }
+
+    6% {
+        content: " Larr|";
+
+    }
+
+    9% {
+        content: " Larry |";
+
+    }
+
+    12% {
+        content: " Larry Da|";
+
+    }
+
+    15% {
+        content: " Larry Da|";
+
+    }
+
+    18% {
+        content: " Larry Dani|";
+
+    }
+
+    21% {
+        content: " Larry Dani|";
+
+    }
+
+    24% {
+        content: " Larry Daniel|";
+
+    }
+
+    27% {
+        content: " Larry Daniels|";
+
+    }
+
+    30% {
+        content: " Larry Daniel|";
+
+    }
+
+    33% {
+        content: " Larry Dani|";
+
+    }
+
+    36% {
+        content: " Larry Da|";
+
+    }
+
+    39% {
+        content: " Larry |";
+
+    }
+
+    42% {
+        content: " Larr|";
+    }
+
+    45% {
+        content: " La|";
+
+    }
+
+    48% {
+        content: " ";
+    }
+
+    51% {
+        content: " De|";
+    }
+
+    54% {
+        content: " Deve|";
+
+    }
+
+    57% {
+        content: " Develo|";
+    }
+
+    60% {
+        content: " Develope|";
+    }
+
+    63% {
+        content: " Developer|";
+    }
+
+    66% {
+        content: " Develope|";
+    }
+
+    69% {
+        content: " Develo|";
+
+    }
+
+    72% {
+        content: " Deve|";
+
+    }
+
+    75% {
+        content: " De|";
+    }
+
+    78% {
+        content: " ";
+
+    }
+
+    81% {
+        content: " De|";
+    }
+
+    84% {
+        content: " Desi|";
+    }
+
+    87% {
+        content: " Design|";
+
+    }
+
+    90% {
+        content: " Designer|";
+
+    }
+
+    93% {
+        content: " Design|";
+    }
+
+    96% {
+        content: " Desi|";
+
+    }
+
+    98% {
+        content: " De|";
+
+    }
+
+    100% {
+        content: " ";
+    }
+
+}
+
+/* end home */
+/* start about */
+.about .progressabout h2 {
+    font-weight: 700;
+    color: var(--main-black);
+
+}
+
+.about .progressabout p {
+    color: var(--main-p);
+    margin-bottom: 16px;
+}
+
+.about .progressabout .backg {
+    background-color: var(--secondary-black);
+
+}
+
+.about .progressabout .t1 {
+    left: 10px;
+    font-size: 15px;
+    bottom: 5px;
+}
+
+.about .progressabout .t2 {
+
+    left: 90%;
+    font-size: 15px;
+    bottom: 5px;
+}
+
+.about .progressabout .t3 {
+
+    left: 75%;
+    font-size: 15px;
+    bottom: 5px;
+}
+
+.about .progressabout .t4 {
+
+    left: 85%;
+    font-size: 15px;
+    bottom: 5px;
+}
+
+.about .btn1 {
+    background-color: var(--secondary-black);
+
+}
+
+.about .btn1 a {
+    color: #fff;
+    padding: 20px 25px;
+}
+
+.about .btn1:hover {
+    border: 1px solid var(--secondary-black);
+}
+
+.about .btn1:hover a {
+    color: var(--main-black);
+}
+
+.about .btn2 {
+    border: 1px solid var(--secondary-black);
+}
+
+.about .btn2 a {
+    padding: 20px 25px;
+    color: var(--main-black);
+
+}
+
+.about .btn2:hover {
+    background-color: var(--secondary-black);
+}
+
+.about .btn2:hover a {
+    color: #fff;
+}
+
+/* end about */
+/* start services */
+.services {
+    background-color: var(--main-back);
+}
+
+.services .contantserv {
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.services .contantserv .imgserv {
+    transition: 1s all;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+    width: 70px;
+    height: 70px;
+    background-color: var(--secondary-back);
+    margin: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.services .contantserv .imgserv i {
+    font-size: 22px;
+    color: var(--main-black);
+}
+
+.services .contantserv:hover .imgserv {
+    background-color: var(--main-black);
+}
+
+.services .contantserv:hover i {
+    color: var(--secondary-back);
+}
+
+.services .contantserv p {
+    color: var(--main-p);
+}
+
+/* end services */
+/* start port*/
+.port .nav .nav-link {
+    color: var(--main-black) !important;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 15px;
+}
+
+.port .nav .active {
+    border-bottom: 5px solid var(--main-black) !important;
+}
+
+.port .boxport {
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fff;
+    opacity: 0;
+    transition: 2s all;
+    -webkit-transition: 2s all;
+    -moz-transition: 2s all;
+    -ms-transition: 2s all;
+    -o-transition: 2s all;
+}
+
+.port .boxport span {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--main-black);
+    transition: 1s all;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+}
+
+.port .boxport span i {
+    color: var(--secondary-back);
+}
+
+.port .boxport span:hover {
+    background-color: var(--secondary-back);
+    border: 1px solid var(--main-black);
+}
+
+.port .boxport span:hover i {
+    color: var(--main-black);
+}
+
+.port .imgport:hover .boxport {
+    opacity: 1;
+}
+
+/* end port*/
+/* start testimonal */
+.testimonal {
+    background-color: var(--main-back);
+}
+
+/* .testimonal .carousel-indicators [data-bs-target] {
+    background-color: #869791 !important;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+}
+
+.testimonal .carousel-indicators {
+    top: 100%;
+} */
+
+/* end testimonal */
+
+/*start blog  */
+.blog{
+    background-color: var(--main-back);
+}
+.blog .boxblog{
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+.blog .boxblog .imgblog img{
+    transition: all 1.5s ;
+    -webkit-transition: all 1.5s ;
+    -moz-transition: all 1.5s ;
+    -ms-transition: all 1.5s ;
+    -o-transition: all 1.5s ;
+}
+.blog .boxblog .imgblog:hover img{
+scale: 1.2;
+}
+.blog .contantblog a{
+    color: var(--main-black);
+    position: relative;
+    font-size: 16px;
+}
+.blog .contantblog a::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-black);
+}
+ .carousel-indicators [data-bs-target] {
+    background-color: #869791 !important;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+}
+
+ .carousel-indicators {
+    top: 100%;
+}
+.blog .d4{
+    display: none;
+}
+@media screen and (max-width:992px) {
+    .blog .d3{
+        display: none;
+    }
+}
+@media screen and (max-width:768px) {
+    .blog .d2{
+        display: none;
+    }
+    .blog .d4{
+        display: unset;
+    }
+}
+
+/*end blog  */
+/* start contact */
+.boxcontact span{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--secondary-back);
+    transition: 1s all;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.boxcontact span i{
+    color: var(--main-black);
+}
+.boxcontact:hover span{
+    background-color: var(--main-black);
+}
+.boxcontact:hover span i{
+    color: var(--secondary-back);
+}
+.boxcontact p{
+    color: var(--main-p);
+}
+.contact .form [type="text"]{
+    width: calc(50% - 10px);
+    background-color: var(--secondary-back);
+}
+.contact .form [type="email"]{
+    margin-left:10px;
+    width:  calc(50% - 10px);
+    background-color: var(--secondary-back);
+}
+.contact .form textarea{
+    resize: none;
+    background-color: var(--secondary-back);
+}
+.contact .form [type="text"],.contact .form [type="email"],.contact .form textarea{
+    outline: none;
+}
+@media screen and (max-width:992px) {
+    .contact .form [type="text"],.contact .form [type="email"]{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+.form .btn5{
+    padding: 15px 35px;
+    background-color: var(--main-black);
+    color: #fff;
+    transition: 1s all;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+}
+.form .btn5:hover{
+    background-color: transparent;
+    color: var(--main-black);
+    border: 1px solid var(--main-black);
+}
+/* end contact */
+/* start footer */
+footer{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* end footer */
